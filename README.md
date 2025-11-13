@@ -14,17 +14,18 @@
  1. Модель неизменяемого заказа
     
 * Класс CoffeeOrder (value object)
-Поля:
-base: одно из ["espresso", "americano", "latte", "cappuccino"].
-size: одно из ["small", "medium", "large"].
-milk: одно из ["none", "whole", "skim", "oat", "soy"], по умолчанию "none".
-syrups: неизменяемая коллекция (tuple[str, ...]), по умолчанию пусто.
-sugar: int, 0 по умолчанию.
-iced: bool, False по умолчанию.
-price: float, вычисляется билдером.
-description: str, человекочитаемое описание заказа.
-Требования:
-Метод str возвращает description (или краткую строку с ценой, если description пуст).
+* Поля:
+  * base: одно из ["espresso", "americano", "latte", "cappuccino"].
+  * size: одно из ["small", "medium", "large"].
+  * milk: одно из ["none", "whole", "skim", "oat", "soy"], по умолчанию "none".
+  * syrups: неизменяемая коллекция (tuple[str, ...]), по умолчанию пусто.
+  * sugar: int, 0 по умолчанию.
+  * iced: bool, False по умолчанию.
+  * price: float, вычисляется билдером.
+  * description: str, человекочитаемое описание заказа.
+    
+* Требования:
+  * Метод str возвращает description (или краткую строку с ценой, если description пуст).
 Fluent Builder для заказа кофе
 Класс CoffeeOrderBuilder с внутренним состоянием для всех опций.
 Методы текучего интерфейса (возвращают self):
