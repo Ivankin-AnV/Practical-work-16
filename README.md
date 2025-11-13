@@ -30,14 +30,14 @@
    
 * Класс CoffeeOrderBuilder с внутренним состоянием для всех опций.
 * Методы текучего интерфейса (возвращают self):
- * set_base(base)
- * set_size(size)
- * set_milk(milk)
- * add_syrup(name) — добавляет сироп; игнорирует дубликаты; ограничение на максимум сиропов.
- * set_sugar(teaspoons) — валидация по диапазону.
- * set_iced(iced: bool = True)
- * clear_extras() — сбрасывает добавки (молоко, сиропы, сахар, шоты, лед).
- * build() — создает новый CoffeeOrder.
+  * set_base(base)
+  * set_size(size)
+  * set_milk(milk)
+  * add_syrup(name) — добавляет сироп; игнорирует дубликаты; ограничение на максимум сиропов.
+  * set_sugar(teaspoons) — валидация по диапазону.
+  * set_iced(iced: bool = True)
+  * clear_extras() — сбрасывает добавки (молоко, сиропы, сахар, шоты, лед).
+  * build() — создает новый CoffeeOrder.
 * Валидация при build():
  * Обязательные поля: base и size — иначе ValueError.
 * Ограничения и прайсинг (можно вынести в константы билдера):
