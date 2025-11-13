@@ -11,8 +11,8 @@
 
 Что нужно реализовать
 
-Модель неизменяемого заказа
-Класс CoffeeOrder (value object)
+**Модель неизменяемого заказа
+**Класс CoffeeOrder (value object)
 Поля:
 base: одно из ["espresso", "americano", "latte", "cappuccino"].
 size: одно из ["small", "medium", "large"].
